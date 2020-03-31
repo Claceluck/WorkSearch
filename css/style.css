@@ -1,0 +1,38 @@
+@import "/css/grid.css"; @import "/css/button.css"; @import "/css/flex.css";
+
+/* Шрифты и отступы */
+
+* {
+    padding: 0;
+    margin: 0; 
+    list-style-type: none; 
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    /* color: #1E3A52; */
+}
+
+
+/* Общие стили */
+
+img {
+    width: 100%;
+    height: auto;
+    
+}
+
+.content-center {
+    text-align: center;
+}
+.button_block {
+   padding-top: 5em;
+   padding-bottom: 5em;
+}
+
+.menu {
+    margin-top: 1em;
+}
+
+.conteiner {
+    margin: 1em auto;
+}

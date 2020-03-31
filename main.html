@@ -3,18 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Document</title>
 </head>
 <body>
     <header>
         <!-- Шапка  -->
-        <nav> <!-- Меню -->
-            <ul>
+        <nav class="menu"> <!-- Меню -->
+            <ul class="flex_row">
                 <li>
                     <a href="#">Главная</a>
                 </li>
-            </ul>
-            <ul>
                 <li>
                     <a href="#">О нас</a>
                 </li>
@@ -24,48 +23,68 @@
             </ul>
         </nav>
     </header>
-    <aside>
+    <aside id="vertical_nav">
         <!-- Левая колонка  -->
     </aside>
     <main>
         <!-- Основной контент -->
-        <div>
+        <div class="content-center conteiner">
             <p> Эта страница поможет вам найти работу или стажировку в разных странах мира!</p>
         </div>
         <!-- Кнопка перехода на анкету -->
-        <div>
-            <a href="#">Начать поиск</a>
+        <div class="content-center button_block">
+            <a class="start_button" href="#">Начать поиск</a>
         </div>
-        <h3>Статистика</h3>
-        <div>
+        <div class="content-center conteiner"> <!-- Блок статитстики -->
+        <h3 class="conteiner">Статистика</h3>
+        <div class="stat_block">
             <div>
                 <p>График 1</p>
+                <img src="https://picsum.photos/700">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa sit provident natus magnam dolore harum quasi fugiat dicta sequi fugit?</p>
             </div>
             <div>
                 <p>График 2</p>
+                <img src="https://picsum.photos/700">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa sit provident natus magnam dolore harum quasi fugiat dicta sequi fugit?</p>
             </div>
             <div>
                 <p>График 3</p>
+                <img src="https://picsum.photos/700">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa sit provident natus magnam dolore harum quasi fugiat dicta sequi fugit?</p>
             </div>
         </div>
-        <h3>Истории людей</h3>
-        <div>
+        </div>
+        <div class="content-center"><!-- Блок историй людей -->
+        <h3 class="conteiner">Истории людей</h3>
+        <div class="story_block">
             <div>
-                <p>Люди</p>
+                <p>График 1</p>
+                <img src="https://picsum.photos/700">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa sit provident natus magnam dolore harum quasi fugiat dicta sequi fugit?</p>
             </div>
             <div>
-                <p>Студенты</p>
+                <p>График 2</p>
+                <img src="https://picsum.photos/700">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa sit provident natus magnam dolore harum quasi fugiat dicta sequi fugit?</p>
             </div>
             <div>
-                <p>Пожилые люди</p>
+                <p>График 3</p>
+                <img src="https://picsum.photos/700">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa sit provident natus magnam dolore harum quasi fugiat dicta sequi fugit?</p>
             </div>
+        </div>
         </div>
     </main>
-    <aside>
+    <aside id="info_block">
         <!-- Правая колонка -->
     </aside>
     <footer>
         <!-- Фотер -->
+        
     </footer>
+    <div id="end">
+            <p>© 2020 Все права защищены!</p>
+    </div>
 </body>
 </html>

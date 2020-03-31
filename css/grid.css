@@ -1,0 +1,53 @@
+
+/*  Грид  сетка */
+
+body {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "vertical_nav main info_block"
+    "footer footer footer"
+    "end end end"
+    ;
+    grid-template-columns: 1fr minmax(500px, 960px) 1fr;
+    grid-template-rows: 5em auto 10em 5em;
+}
+#end {
+    grid-area: end;
+    background-color: darkviolet;
+}
+
+header {
+    grid-area: header;
+    background-color: aquamarine;
+}
+#vertical_nav {
+    grid-area: vertical_nav;
+    background-color: cadetblue;
+}
+#info_block {
+    grid-area: info_block;
+    background-color: darkgoldenrod;
+}
+main {
+    grid-area: main;
+    background-color: darksalmon;
+}
+footer {
+    grid-area: footer;
+    background-color: darkolivegreen;
+}
+
+/* Размещение элементов в нутри сетки */
+
+.stat_block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.story_block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.menu {
+    display: ;
+}
