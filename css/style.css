@@ -20,10 +20,6 @@ img {
     height: auto;
     
 }
-
-.content-center {
-    text-align: center;
-}
 .button_block {
    padding-top: 5em;
    padding-bottom: 5em;
@@ -34,5 +30,53 @@ img {
 }
 
 .conteiner {
+    text-align: center;
+}
+
+.conteiner h3,p {
     margin: 1em auto;
+}
+
+footer,h5 { 
+    margin: 1em;
+}
+.avtor_img {
+    border-radius: 50%;
+
+}
+.stat_img {
+    border-radius: 50%;
+}
+/* Адаптивность */
+
+
+@media screen and (max-width: 770px) { /*xm*/
+    aside {
+        display: none;
+    }
+    .stat_block_xm {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 1em;
+    }
+    .story_block_xm  {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 1em;
+    }
+}
+
+@media screen and (max-width: 480px ) {/*xs*/
+    aside {
+        display: none;
+    }
+    .stat_block_xs {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        /* gap: 1em; */
+    }
+    .story_block_xs  {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        gap: 1em;
 }

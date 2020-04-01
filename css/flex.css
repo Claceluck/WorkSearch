@@ -5,3 +5,8 @@
     flex-direction: row;
     justify-content: space-around;
 }
+.flex_column {
+    display: flex;
+    flex-direction: column;
+    
+}
