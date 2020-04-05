@@ -4,21 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
-    <title>Document</title>
+    <link rel="icon" href="/img/team.png" type="images/png">
+    <title>Работай и путешествуй</title>
 </head>
 <body>
     <header>
         <!-- Шапка  -->
-        <nav class="menu"> <!-- Меню -->
-            <ul class="flex_row">
+        <nav class="top-menu"> <!-- Меню -->
+            <!-- <ul class="flex_row"> -->
+                <ul class="menu-main flex_row">
                 <li>
-                    <a href="#">Главная</a>
+                    <a href="main.html">Главная</a>
                 </li>
                 <li>
-                    <a href="#">Блог</a>
+                    <a href="blog.html">Блог</a>
                 </li>
                 <li>
-                    <a href="#">Новости</a>
+                    <a href="news.html">Новости</a>
                 </li>
                 <li>
                     <a href="#">Гид</a>
@@ -34,12 +36,13 @@
     </aside>
     <main>
         <!-- Основной контент -->
-        <div class="conteiner">
-            <p> Эта страница поможет вам найти работу или стажировку в разных странах мира!</p>
+        <div class="conteiner info_buton">
+            <h4> Эта страница поможет вам найти работу или стажировку в разных странах мира!</h4>
         </div>
         <!-- Кнопка перехода на анкету -->
+
         <div class="conteiner button_block">
-            <a class="start_button" href="#">Начать поиск</a>
+            <a class="start_button" href="anketa.html">Начать поиск</a>
         </div>
         <div class="conteiner"> <!-- Блок статитстики -->
         <h3>Статистика</h3>
@@ -71,11 +74,11 @@
                         <img class="avtor_img" src="https://picsum.photos/700" alt="#">
                     </div>
                     <div>
-                        <h5>Автор:<a href="#">Иванов Василий</a> | 04.12.2015</h5>
+                        <h5>Автор: <a class="avtor" href="#">Иванов Василий</a> | 04.12.2015</h5>
                     </div>
                 </div>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, ipsa.</p>
-                 <a class="button" href="#"> <span>Читать дальше...</span></a>
+                 <a class="read_later" href="#"> <span>Читать дальше...</span></a>
             </div>
             <div>
                 <h3>Мой опыт работы в Англии</h3>
@@ -84,11 +87,11 @@
                         <img class="avtor_img" src="https://picsum.photos/700" alt="#">
                     </div>
                     <div>
-                        <h5>Автор:<a href="#">Иванов Василий</a> | 04.12.2015</h5>
+                        <h5>Автор: <a class="avtor" href="#">Иванов Василий</a> | 04.12.2015</h5>
                     </div>
                 </div>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, ipsa.</p>
-                 <a class="button" href="#"> <span>Читать дальше...</span></a>
+                 <a class="read_later" href="#"> <span>Читать дальше...</span></a>
             </div>
             <div>
                 <h3>Мой опыт работы в Англии</h3>
@@ -97,11 +100,11 @@
                         <img class="avtor_img" src="https://picsum.photos/700" alt="#">
                     </div>
                     <div>
-                        <h5>Автор:<a href="#">Иванов Василий</a> | 04.12.2015</h5>
+                        <h5>Автор: <a class="avtor"  href="#">Иванов Василий</a> | 04.12.2015</h5>
                     </div>
                 </div>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, ipsa.</p>
-                 <a class="button" href="#"> <span>Читать дальше...</span></a>
+                 <a class="read_later" href="#"> <span>Читать дальше...</span></a>
             </div>
         </div>
         </div>
@@ -109,7 +112,7 @@
     <aside id="info_block">
         <!-- Правая колонка -->
     </aside>
-    <footer class="flex_row conteiner ">
+    <footer class="flex_row conteiner flex_column_xs ">
         <!-- Футер -->
         <section>
             <h5>Информация</h5>
@@ -131,20 +134,22 @@
                 <a class="VK" href="#">@mail</a>  
             </nav>
         </section>
-        <section>
-            <h5>Мы в соц.сетях:</h5>
-            <nav class="flex_column">
-                <a class="VK" href="#"></a>
+        <section class="social">
+            <h5>Мы в соц.сетях</h5>
+            <nav>
+                <a class="facebook" href="#"></a>
                 <a class="youtube" href="#"></a>
                 <a class="twitter" href="#"></a>
                 <a class="instagram" href="#"></a>
                 <a class="linked" href="#"></a>
             </nav>
         </section>
-        
+        <section>
+            <nav class="flex_row">
+                <p>© 2020 Все права защищены!</p>
+            </nav>
+    </section>
     </footer>
-    <div id="end">
-            <p>© 2020 Все права защищены!</p>
-    </div>
+    
 </body>
 </html>

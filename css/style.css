@@ -20,19 +20,22 @@ img {
     height: auto;
     
 }
+
 .button_block {
-   padding-top: 5em;
-   padding-bottom: 5em;
+   padding-top: 3em;
+   padding-bottom: 3em;
 }
 
-.menu {
-    margin-top: 1em;
+.info_buton { 
+margin-top: 40em;
 }
-
 .conteiner {
     text-align: center;
 }
 
+.news_block{
+    
+}
 .conteiner h3,p {
     margin: 1em auto;
 }
@@ -47,7 +50,169 @@ footer,h5 {
 .stat_img {
     border-radius: 50%;
 }
+
+/* Кнопка перехода к анкете */
+
+.start_button {
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    width: 140px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 45px;
+    margin: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: black;
+    background: white;
+    box-shadow: 0 8px 15px rgba(0,0,0,.1);
+    transition: .3s;
+  }
+  .start_button:hover {
+    background: #2EE59D;
+    box-shadow: 0 15px 20px rgba(46,229,157,.4);
+    color: white;
+    transform: translateY(-7px);
+  }
+
+/* Меню */
+
+.top-menu {
+    position: relative;
+    background: rgba(34,34,34,.2);
+  }
+
+  .menu-main a {
+    text-decoration: none;
+    display: block;
+    line-height: 4em;
+    padding: 0 20px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-family: 'Arimo', sans-serif;
+    font-weight: bold;
+    color: white;
+    transition: .3s linear;
+  }
+  .menu-main a:hover {background: rgba(0,0,0,.3);
+}
+ 
+
+/* .menu-main {
+    margin-top: 1em;
+  } 
+.menu-main ul  {
+    display: block;
+}
+.menu-main a {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 17px;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: color 0.3s;
+}
+.menu-main a, .menu-main a:visited {
+    color: black;
+}
+.menu-main a.current, .menu-main a:hover {
+    color: #2EE59D;
+}
+header:hover {
+    background-color: grey;
+    transition: 0.5s;
+} */
+
+
+/* Автор */
+.avtor {
+    background-image: linear-gradient(#2EE59D 50%, #2EE59D 50%), linear-gradient(silver 50%, silver 50%); 
+    background-position: center bottom; 
+    background-repeat: no-repeat; 
+    background-size: 0 2px, 100% 2px; 
+    color: black; 
+    padding-bottom: 3px; 
+    transition: .5s ease-in-out;
+}
+.avtor:hover {
+    background-size: 100% 2px, 100% 2px;
+    color: #2EE59D;
+}
+
+/* Читать дальше  */
+
+.read_later {
+   
+    background-position: center bottom; 
+    background-repeat: no-repeat; 
+    background-size: 0 2px, 100% 2px; 
+    color: black; 
+    padding-bottom: 3px; 
+    transition: .5s ease-in-out;
+}
+.read_later:hover {
+    background-size: 100% 2px, 100% 2px;
+    color: #2EE59D;
+
+}
+
+/* Изображения */
+
+/* Фон */
+
+body {
+    background-image: url(/img/fon.jpg);
+    ​​​​​​​​​​​​​background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+img {
+    /* Прозрачность */
+    opacity:0.9;
+    cursor: pointer;
+}
+img:hover {
+    opacity: 1;
+}
+
+/* Фоотер */
+
+footer {
+    /* background: rgba(34,34,34,.2); */
+    width:100%;
+    margin:3em auto
+}
+
+footer .social a {
+    height: 98px;
+    width: 98px;
+    display: inline-block;
+    background: url(../img/sprites.png);
+    background-repeat: no-repeat;
+}
+footer a.facebook {
+    background-position: 0 0;
+}
+footer a.youtube {
+    background-position: -200px 0;
+}
+footer a.twitter {
+    background-position: -500px 0;
+}
+footer a.instagram {
+    background-position: -300px 0;
+}
+footer a.linked {
+    background-position: -400px 0;
+}
+
 /* Адаптивность */
+
+
 
 
 @media screen and (max-width: 770px) { /*xm*/
@@ -65,7 +230,6 @@ footer,h5 {
         gap: 1em;
     }
 }
-
 @media screen and (max-width: 480px ) {/*xs*/
     aside {
         display: none;
@@ -79,4 +243,10 @@ footer,h5 {
         display: grid;
         grid-template-columns: repeat(1, 1fr); 
         gap: 1em;
+    }
+    .menu-main  {
+        display: block;
+        text-align: center;
+    }
+   
 }
