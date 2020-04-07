@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="icon" href="/img/team.png" type="images/png">
-    <title>Блог</title>
+    <title>Анкета</title>
 </head>
 <body>
     <header>
@@ -38,52 +38,64 @@
         <!-- Основной контент -->
 
         <div class="info_buton conteiner">
-            <h4 class="conteiner"> Заполните анкету </h4>
+            <h3 class="conteiner"> Заполните анкету </h3>
         </div>
     <form id="" name="" action="#" method="POST">
+        <!-- Регистрация -->
         <fieldset>
-            <label for=""> <h4>Контактная информация</h4></label>
-               <div>
+            <h3>Для начала Зарегистрируемся:</h3>
+            <div>
+                <input type="text" id="email" required autocomplete="off">
+                <label for="email">Email</label>
+            </div>
+            <div>
+                <input type="password" id="password" required autocomplete="off">
+                <label for="password">Пароль</label>
+            </div>
+                <input type="password" id="password" required autocomplete="off">
+                <label for="password">Пароль</label>
+            </div>
+        </fieldset>
+        <!-- Контактная информация -->
+        <fieldset>
+            <h3>Контактная информация:</h3>
+            <div>
+                <input type="name" id="name" required autocomplete="off">
                 <label for="name">Имя</label>
-                <input type="text" name="name" required>
-              </div>
-              <div>
-                <label for="name">Фамилия</label>
-                <input type="text" name="name" required>
-              </div>
-              <div>
-                <label for="name">Отчество</label>
-                <input type="text" name="name" required>
-              </div>
-              <div>
-                <label for="name">E-mail:</label>
-                <input type="text" name="name" required>
-              </div>
-              <div>
-                <label for="name">Моб.телефон</label>
-                <input type="text" name="name" required>
-              </div>
-              <div>
-                <label for="name">Город:</label>
-                <input type="text" name="name" required>
-              </div>
-              <div>
-                <label for="name">Страна проживания:</label>
-                <input type="text" name="name" required>
-              </div>
-              <div>
-                <label for="name">Возраст:</label>
-                <input type="text" name="name" required>
-              </div>
-              <div>
-                <label for="name">Семейное положение:</label>
-                <input type="text" name="name" required>
-              </div>
+            </div>
+            <div>
+                <input type="lastname" id="lastname" required autocomplete="off">
+                <label for="lastname">Фамилия</label>
+            </div>
+            <div>
+                <label>
+                    М
+                <input type="radio" name="sex" value="female" required>
+                    Ж
+                <input type="radio" name="sex" value="man" required>
+            </label>
+            </div>
+            <div>
+                <input type="age" id="age" required autocomplete="off">
+                <label for="age">Возраст</label>
+            </div>
+            <div>
+                <input type="phone" id="phone" required autocomplete="off">
+                <label for="phone">Моб.телефон</label>
+            </div>
+            <div>
+                <input type="cunty" id="cunty" required autocomplete="off">
+                <label for="cunty">Страна проживания</label>
+            </div>
+            <div>
+                <input type="city" id="city" required autocomplete="off">
+                <label for="city">Город</label>
             </div>
         </fieldset>
         <fieldset>
+            <h3>Владение иностранными языками:</h3>
             <div>
-
+               
             </div>
         </fieldset>
     </form>

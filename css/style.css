@@ -50,6 +50,9 @@ footer,h5 {
 .stat_img {
     border-radius: 50%;
 }
+.blog_img {
+    border-radius: 10%;
+}
 
 /* Кнопка перехода к анкете */
 
@@ -326,7 +329,7 @@ footer a.linked {
     right: 10px;
     color: red;
     font-size: x-large;
-
+}
 
 /* Адаптивность */
 
@@ -347,6 +350,16 @@ footer a.linked {
         grid-template-columns: repeat(2, 1fr); 
         gap: 1em;
     }
+    .blog_block_xm {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 1em;
+    }
+    .news_block_xm {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 1em;
+    }
 }
 @media screen and (max-width: 480px ) {/*xs*/
     aside {
@@ -358,6 +371,16 @@ footer a.linked {
         /* gap: 1em; */
     }
     .story_block_xs  {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        gap: 1em;
+    }
+    .news_block_xs {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        gap: 1em;
+    }
+    .blog_block_xs {
         display: grid;
         grid-template-columns: repeat(1, 1fr); 
         gap: 1em;
