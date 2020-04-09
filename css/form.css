@@ -36,17 +36,20 @@ select {
 div {
     margin: 0.2em;
 }
-/* .col_25 {
-    float: left;
-    width: 25%;
-    margin-top: 6px;
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
 }
 
-.col_75 {
-    float: left;
-    width: 75%;
-    margin-top: 6px;
-} */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
 
 .anketa{
     display: grid;
@@ -56,3 +59,12 @@ div {
 label {
     padding: 12px 12px 12px 0;
     display: inline-block;
+}
+
+input:valid {
+    background-color: #dfd;
+}
+/* input:invalid {
+    background-color: #fdd;
+} */
+
