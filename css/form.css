@@ -1,0 +1,58 @@
+input, textarea {
+    /* margin: 0.1em; */
+    padding: 0.1em;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    border-radius: 4px;
+    resize: none;
+}
+
+form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+}
+
+fieldset {
+    border: none;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    background-color: lightblue;
+}
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+   
+    resize: none;
+}
+select {
+    width: 100%;
+    padding: 16px 20px;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+div {
+    margin: 0.2em;
+}
+/* .col_25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col_75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+} */
+
+.anketa{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 1em;
+} 
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
