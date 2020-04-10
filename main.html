@@ -9,9 +9,25 @@
 </head>
 <body>
     <header>
-        <!-- Шапка  -->
-        <nav class="top-menu"> <!-- Меню -->
-            <!-- <ul class="flex_row"> -->
+        <a href="main.html" class="logo">Work & Travels</a>
+        <nav>
+          <ul class="topmenu">
+            <li><a href="main.html">Главная</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li><a href="" class="submenu-link">О нас</a>
+              <ul class="submenu">
+                <li><a href="blog.html">Блог</a></li>
+                <li><a href="">Гид</a></li>
+              </ul>
+            </li>
+            <li><a href="#auth">Вход</a></li>
+          </ul>
+        </nav>
+      </header>
+    <!-- <header>
+         Шапка  
+        <nav class="top-menu" Меню 
+        <ul class="flex_row"> 
                 <ul class="menu-main flex_row">
                 <li>
                     <a href="main.html">Главная</a>
@@ -30,14 +46,14 @@
                 </li>
             </ul>
         </nav>
-    </header>
+    </header> -->
     <aside id="vertical_nav">
         <!-- Левая колонка  -->
     </aside>
     <main>
         <!-- Основной контент -->
         <div class="conteiner info_buton">
-            <h4> Эта страница поможет вам найти работу или стажировку в разных странах мира!</h4>
+            <h4 class="logo_2"> Эта страница поможет вам найти работу или стажировку в разных странах мира!</h4>
         </div>
         <!-- Кнопка перехода на анкету -->
 
@@ -67,14 +83,14 @@
         <div class="conteiner"><!-- Блок историй людей -->
         <h3>Истории людей</h3>
         <div class="story_block story_block_xm story_block_xs">
-            <div>
-                <h3>Мой опыт работы в Англии</h3>
-                <div class="flex_column">
+            <div class="story_block_1">
+                <h3>Личный опыт: как найти работу в США</h3>
+                <div>
                     <div>
                         <img class="avtor_img" src="https://picsum.photos/700" alt="#">
                     </div>
                     <div>
-                        <h5>Автор: <a class="avtor" href="#">Иванов Василий</a> | 04.12.2015</h5>
+                        <h5>Автор: <a class="avtor" href="#">Екатерина Иванова</a> | 04.12.2019</h5>
                     </div>
                 </div>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, ipsa.</p>
@@ -112,10 +128,10 @@
     <aside id="info_block">
         <!-- Правая колонка -->
     </aside>
-    <footer class="flex_row conteiner flex_column_xs ">
+    <footer class=" footer flex_row conteiner_footer flex_column_xs ">
         <!-- Футер -->
         <section>
-            <h5>Информация</h5>
+            <h5 class="h_footer">Информация</h5>
             <nav class="flex_column">
                <a href="#">О нас</a>
                <a href="#">Правила сайта</a>
@@ -123,19 +139,19 @@
             </nav>
         </section>
         <section>
-            <h5>Помощь</h5>
+            <h5 class="h_footer">Помощь</h5>
             <nav class="flex_column">
                 <a href="#">Техподдержка</a>
             </nav>
         </section>
         <section>
-            <h5>Написать нам</h5>
+            <h5 class="h_footer">Написать нам</h5>
             <nav class="flex_column">
-                <a class="VK" href="#">@mail</a>  
+                <a class="email" href="#">Work&Travels@mail.com</a>  
             </nav>
         </section>
         <section class="social">
-            <h5>Мы в соц.сетях</h5>
+            <h5 class="h_footer">Мы в соц.сетях</h5>
             <nav>
                 <a class="facebook" href="#"></a>
                 <a class="youtube" href="#"></a>

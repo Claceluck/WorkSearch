@@ -41,6 +41,7 @@ input[type=submit] {
     background-color: #4CAF50;
     color: white;
     padding: 12px 20px;
+    margin-bottom: 1em;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -61,10 +62,11 @@ label {
     display: inline-block;
 }
 
-input:valid {
+.required:valid {
     background-color: #dfd;
 }
-/* input:invalid {
+
+.required:invalid {
     background-color: #fdd;
-} */
+}
 

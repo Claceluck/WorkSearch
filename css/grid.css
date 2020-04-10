@@ -6,14 +6,9 @@ body {
     grid-template-areas: 
     "header header header"
     "vertical_nav main info_block"
-    "footer footer footer"
-    "end end end"
-    ;
+    "footer footer footer";
     grid-template-columns: 1fr minmax(500px, 1100px) 1fr;
-    grid-template-rows: 5em auto 10em 5em;
-}
-#end {
-    grid-area: end;
+    grid-template-rows: 10em auto 1fr;
 }
 
 header {
@@ -27,11 +22,15 @@ header {
 }
 main {
     grid-area: main;
+    margin-bottom: 1em;
 }
 footer {
     grid-area: footer;
 }
-
+.footer {
+        grid-row-start: 3;
+        grid-row-end: 4;
+}
 /* Размещение элементов в нутри сетки */
 
 .stat_block {
@@ -41,9 +40,12 @@ footer {
 }
 .story_block {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1em;
 }
+/* .story_block_1 {
+    display: grid;
+} */
 .news_block {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
