@@ -44,9 +44,14 @@ margin-top: 40em;
 footer,h5 { 
     margin: 1em;
 }
-.avtor_img {
-    border-radius: 50%;
+.story_img {
+    border-radius: 10%;
+    max-height: 40em;
 
+}
+.story_header {
+    margin-bottom: 3em;
+    text-align: center;
 }
 .stat_img {
     border-radius: 50%;
@@ -607,9 +612,9 @@ footer a.linked {
         grid-template-columns: repeat(2, 1fr); 
         gap: 1em;
     }
-    .story_block_xm  {
+    .story_block_1_xs  {
         display: grid;
-        grid-template-columns: repeat(2, 1fr); 
+        grid-template-columns: repeat(1, 1fr); 
         gap: 1em;
     }
     .blog_block_xm {
@@ -642,7 +647,7 @@ footer a.linked {
         grid-template-columns: repeat(1, 1fr); 
         gap: 1em;
     }
-    .blog_block_xs {
+    .story_block_1_xs {
         display: grid;
         grid-template-columns: repeat(1, 1fr); 
         gap: 1em;
